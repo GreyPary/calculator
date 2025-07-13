@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .cal-btn {
+    @apply aspect-square text-3xl font-semibold text-white/75 dark:text-black/75 bg-black/75 dark:bg-white/75 rounded-full;
+  }
+}
